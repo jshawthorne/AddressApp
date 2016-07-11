@@ -164,6 +164,6 @@ public class PersonOverviewController {
      */
     @FXML
     private void handleClose() {
-    	Platform.exit();
+        Platform.exit();
     }
 }
