@@ -1,5 +1,6 @@
 package ch.makery.address.view;
 
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
@@ -156,5 +157,13 @@ public class PersonOverviewController {
 
             alert.showAndWait();
         }
+    }
+
+    /**
+     * Called when the user clicks the Close button. Closes the application.
+     */
+    @FXML
+    private void handleClose() {
+    	Platform.exit();
     }
 }
